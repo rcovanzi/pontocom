@@ -13,4 +13,5 @@ function toggleTheme() {
 window.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('theme') || 'light';
   setTheme(saved);
+  document.getElementById('themeToggle').addEventListener('click', toggleTheme);
 });

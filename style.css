@@ -13,26 +13,26 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
-  transition: background 0.3s, color 0.3s;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s;
 }
 
 header {
   background: var(--accent);
   color: white;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
 }
 
 nav a {
-  margin-right: 1rem;
   color: white;
+  margin-right: 1rem;
   text-decoration: none;
 }
 
@@ -40,59 +40,31 @@ nav button {
   background: white;
   color: var(--accent);
   border: none;
+  border-radius: 12px;
   padding: 0.3rem 0.8rem;
-  border-radius: 20px;
   cursor: pointer;
 }
 
 main {
-  padding: 2rem;
   max-width: 800px;
-  margin: auto;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-}
-
-.card {
-  background: var(--card-bg);
+  margin: 2rem auto;
   padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-form {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
+.post-preview {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
 }
 
-form input,
-form textarea {
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background: var(--card-bg);
-  color: var(--text);
-}
-
-form button {
-  align-self: start;
-  background: var(--accent);
-  color: white;
-  border: none;
-  padding: 0.7rem 1.2rem;
-  border-radius: 6px;
-  cursor: pointer;
+.date {
+  color: #666;
+  font-size: 0.9rem;
 }
 
 footer {
   text-align: center;
-  padding: 2rem;
   font-size: 0.9rem;
+  padding: 2rem;
   color: #777;
 }
