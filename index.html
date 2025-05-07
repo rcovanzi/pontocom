@@ -1,48 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home | John Doe</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John Doe | Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div class="logo">John Doe</div>
+    <h1>John Doe</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="contact.html">Contact</a>
-      <button class="toggle-theme" onclick="toggleTheme()">☀️</button>
+      <button id="themeToggle">☀️</button>
     </nav>
   </header>
 
-  <main class="container">
-    <section id="about">
-      <h1>Welcome</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rhoncus justo nec nulla tempor, non porta metus finibus.</p>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac vestibulum erat. Proin feugiat magna at dui gravida, vel pretium sapien laoreet.</p>
     </section>
 
-    <section id="projects">
+    <section>
       <h2>Projects</h2>
-      <div class="grid">
+      <div class="projects">
         <div class="card">
-          <h3>Portfolio Builder</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ultrices nulla.</p>
+          <h3>Project One</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="card">
-          <h3>Weather App</h3>
-          <p>Ut placerat, sapien eget lobortis cursus, leo nisl convallis nisi, sed facilisis justo risus a arcu.</p>
-        </div>
-        <div class="card">
-          <h3>Markdown Blog</h3>
-          <p>Cras non quam vel ligula tempor vehicula nec vel arcu.</p>
+          <h3>Project Two</h3>
+          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 John Doe — <a href="contact.html">Get in touch</a></p>
+    <p>© 2025 John Doe — <a href="contact.html">Say hello</a></p>
   </footer>
 
   <script src="theme.js"></script>
